@@ -1,0 +1,147 @@
+body{
+    margin : 0; /*it will reove the margin */
+    overflow: hidden;/*it will make our excel non scrolable*/
+    font-size: 14;
+
+}
+
+* { /*  *{   it will be for all the things  } */
+    box-sizing: border-box;/*boarder and padding will be included in the box only*/
+}
+
+.container{
+    height:100vh;
+    /*border: 2px solid red;*/
+}
+
+.title-bar{
+    height:5vh;
+    /*border: 2px solid blue;*/
+    background-color: #107C41;
+    display: flex;
+    flex-direction: row; /*by default it will be row only u can chenge it to clumn also*/
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.menu-bar{
+    height:5vh;
+    /*border: 2px solid pink;*/
+    background-color: #107C41;
+    display: flex;
+}
+
+.menu-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 18;
+    align-items: center;
+}
+
+.menu-item.selected{
+    background-color: #fff;
+    color: #107C41;
+}
+.menu-item:hover{
+    background-color: #0c5e31;
+    cursor:pointer;
+
+}
+.menu-item.selected:hover{
+    background-color: #fff;
+    cursor: default;
+}
+
+.menu-icon-bar {
+    height:6vh;
+    /*border: 2px solid orange;*/
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+
+}
+.menu-icon{
+    padding-left: 10px;
+    padding-right: 10px;     
+}
+
+.menu-icon:hover{
+    height: 100%;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.font-family-selector{
+    width:150px;
+}
+
+.selector{
+    height:25px;
+    font-size: 18px;
+}
+.selector option {
+    font-size: 18px;
+}
+
+
+
+.formula-bar{
+    height:5vh;
+    /*border: 2px solid black;*/
+}
+
+.data-container{
+    height:75vh;
+    /*border: 2px solid yellow;*/
+}
+
+.sheet-bar{
+    height:4vh;
+    /*border: 2px solid blue;*/
+    display:flex;
+    align-items: center;
+
+}
+.scroller{
+    width: 70px;
+}
+
+.icon-left-scroll,.icon-right-scroll{
+    font-size: 30px;
+}
+
+.icon-left-scroll:hover,.icon-right-scroll:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.icon-add{
+    color: #107C41;
+    width:40px;
+}
+.icon-add:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.sheet-tab-container{
+    border: 1px solid lightgray;
+    width:1000px;
+}
+
+.sheet-tab{
+    border-bottom: 4px solid #107C41;
+    padding-left: 10px;
+    padding-right: 10px;
+    display :flex;
+    width:80px;
+    align-items: center;
+    justify-content:center;
+    font-weight: 600;
+    border-right: 1px solid lightgray;
+}
+.sheet-tab:hover{
+    cursor: default;
+}
