@@ -95,7 +95,61 @@ body{
 .data-container{
     height:75vh;
     /*border: 2px solid yellow;*/
+    display: flex;
+    flex-wrap: wrap;
+
 }
+.select-all{
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgray;
+}
+
+.column-name-container{
+    width: calc(100vw - 30px);
+    height: 30px;
+    border: 1px solid lightgray;
+    display: flex;
+    overflow: hidden;
+}
+.column-name{
+    min-width: 100px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border-right: 1px solid lightgray;
+    font-weight: bold;
+}
+
+.row-name-container{
+    width: 30px;
+    height: calc(75vh - 30px) ;
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+.row-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25px;
+     border-bottom: 1px solid lightgray;
+}
+
+.input-cell-container{
+    width: calc(100vw - 30px);
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+}
+.cell-row{
+    display: flex;
+}
+.input-cell{
+    min-width: 100px;
+    min-height: 25px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
 
 .sheet-bar{
     height:4vh;
